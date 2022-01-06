@@ -24,9 +24,10 @@ persons.add(Person(age: 10, name: "Jack"));
 persons.add(nil);
 persons.add(Person(age: 15, name: "Rose"));
 persons.add(nil);
-persons.add(Person(age: 12, name: "James"));
+var p = Person(age: 12, name: "James")
+persons.add(p);
 persons.add(nil);
 
 print(persons)
-print(persons.indexOf(nil) as Any);
+print(persons.indexOf(p) as Any);
 
