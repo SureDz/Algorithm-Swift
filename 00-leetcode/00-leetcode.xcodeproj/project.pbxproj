@@ -12,6 +12,9 @@
 		20A8090A2785FE3E006DCCA9 /* _206_反转链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A809092785FE3E006DCCA9 /* _206_反转链表.swift */; };
 		20A8090C2785FE6A006DCCA9 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A8090B2785FE6A006DCCA9 /* ListNode.swift */; };
 		20A8090E27868292006DCCA9 /* _141_环形链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A8090D27868292006DCCA9 /* _141_环形链表.swift */; };
+		20A8091027868EF3006DCCA9 /* _203_移除链表元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A8090F27868EF3006DCCA9 /* _203_移除链表元素.swift */; };
+		20A80912278695A8006DCCA9 /* _83_删除排序链表中的重复元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A80911278695A8006DCCA9 /* _83_删除排序链表中的重复元素.swift */; };
+		20A8091427869809006DCCA9 /* _876_链表的中间结点.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A8091327869809006DCCA9 /* _876_链表的中间结点.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +36,9 @@
 		20A809092785FE3E006DCCA9 /* _206_反转链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_206_反转链表.swift"; sourceTree = "<group>"; };
 		20A8090B2785FE6A006DCCA9 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		20A8090D27868292006DCCA9 /* _141_环形链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_141_环形链表.swift"; sourceTree = "<group>"; };
+		20A8090F27868EF3006DCCA9 /* _203_移除链表元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_203_移除链表元素.swift"; sourceTree = "<group>"; };
+		20A80911278695A8006DCCA9 /* _83_删除排序链表中的重复元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_83_删除排序链表中的重复元素.swift"; sourceTree = "<group>"; };
+		20A8091327869809006DCCA9 /* _876_链表的中间结点.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_876_链表的中间结点.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 				20A809072785FE31006DCCA9 /* _237_删除链表中的节点.swift */,
 				20A809092785FE3E006DCCA9 /* _206_反转链表.swift */,
 				20A8090D27868292006DCCA9 /* _141_环形链表.swift */,
+				20A8090F27868EF3006DCCA9 /* _203_移除链表元素.swift */,
+				20A80911278695A8006DCCA9 /* _83_删除排序链表中的重复元素.swift */,
+				20A8091327869809006DCCA9 /* _876_链表的中间结点.swift */,
 				20A8090B2785FE6A006DCCA9 /* ListNode.swift */,
 			);
 			path = "链表";
@@ -139,11 +148,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20A80912278695A8006DCCA9 /* _83_删除排序链表中的重复元素.swift in Sources */,
 				20A809082785FE31006DCCA9 /* _237_删除链表中的节点.swift in Sources */,
 				20A8090E27868292006DCCA9 /* _141_环形链表.swift in Sources */,
 				20A808FE2785F254006DCCA9 /* main.swift in Sources */,
 				20A8090A2785FE3E006DCCA9 /* _206_反转链表.swift in Sources */,
 				20A8090C2785FE6A006DCCA9 /* ListNode.swift in Sources */,
+				20A8091027868EF3006DCCA9 /* _203_移除链表元素.swift in Sources */,
+				20A8091427869809006DCCA9 /* _876_链表的中间结点.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

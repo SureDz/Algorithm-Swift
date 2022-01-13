@@ -95,6 +95,8 @@ struct SureArray<T>: SureList {
         }
         size -= 1
         elements[size] = nil
+        
+        trim()
         return oldElement
     }
 }
@@ -153,6 +155,20 @@ extension SureArray {
             }
             elements = newElements
             print("\(oldCapacity)扩容为\(newCapacity)")
+            return
+        }
+    }
+    
+    private mutating func trim() {
+        let oldCapacity = elements.count
+        let newCapacity = oldCapacity >> 1
+        guard size >= newCapacity && oldCapacity <= DEFAULT_CAPACITY else {
+            var newElements = [Element?](repeating: DEFAULT_VALUE, count: newCapacity)
+            for i in 0..<size {
+                newElements[i] = elements[i]
+            }
+            elements = newElements
+            print("\(oldCapacity)缩容为\(newCapacity)")
             return
         }
     }

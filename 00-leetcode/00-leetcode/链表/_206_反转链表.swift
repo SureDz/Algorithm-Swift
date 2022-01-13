@@ -6,7 +6,10 @@
 //
 
 import Foundation
-
+/**
+ * https://leetcode-cn.com/problems/reverse-linked-list/
+ *
+ */
 class _206_反转链表 {
     func reverseList(_ head: ListNode?) -> ListNode? {
         if head == nil || head?.next == nil {

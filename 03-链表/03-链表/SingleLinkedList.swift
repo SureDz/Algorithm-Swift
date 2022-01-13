@@ -24,8 +24,6 @@ public struct SureLinked<T>: SureList {
     
     typealias Element = T
     
-   
-    
     var size: Int = 0
     
     var first: Node<T>?

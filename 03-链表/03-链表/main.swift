@@ -8,7 +8,7 @@
 import Foundation
 
 
-testLinked()
+testArray()
 
 func testLinked() {
     var list = SureLinked<Int>()
@@ -35,7 +35,8 @@ func testArray() {
     list.add(nil)
     list.add(Person(age: 12, name: "jayjay"))
     list.add(nil)
-    print(list)
+    list.add(Person(age: 12, name: "jayjay"))
+    list.add(nil)
     list.remove(index: 3)
     print(list)
     list.remove(index: 2)
