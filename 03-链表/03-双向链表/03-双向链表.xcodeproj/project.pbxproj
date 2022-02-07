@@ -6,25 +6,16 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		20BD51F927B17C3C00638296 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 20BD51F527B17C3C00638296 /* 03-单向链表.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 20BD51EB27B17C3C00638296;
-			remoteInfo = "03-单向链表";
-		};
-		20BD521A27B17CC100638296 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 20BD521627B17CC000638296 /* 03-双向链表.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 20BD520C27B17CC000638296;
-			remoteInfo = "03-双向链表";
-		};
-/* End PBXContainerItemProxy section */
+/* Begin PBXBuildFile section */
+		20BD522227B17D0000638296 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BD521D27B17D0000638296 /* Person.swift */; };
+		20BD522327B17D0000638296 /* DoubleLinkedList.swift 00-01-15-086.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BD521E27B17D0000638296 /* DoubleLinkedList.swift 00-01-15-086.swift */; };
+		20BD522427B17D0000638296 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BD521F27B17D0000638296 /* List.swift */; };
+		20BD522527B17D0000638296 /* ArrayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BD522027B17D0000638296 /* ArrayList.swift */; };
+		20BD522727B17D2300638296 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BD522627B17D2300638296 /* main.swift */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		20BD51D627B17BFF00638296 /* CopyFiles */ = {
+		20BD520A27B17CC000638296 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -36,13 +27,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		20BD51D827B17BFF00638296 /* 03-链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "03-链表"; path = "/Users/Dz/Desktop/GitHub/Algorithm-Swift/03-链表/build/Debug/03-链表"; sourceTree = "<absolute>"; };
-		20BD51F527B17C3C00638296 /* 03-单向链表.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "03-单向链表.xcodeproj"; path = "03-单向链表/03-单向链表.xcodeproj"; sourceTree = "<group>"; };
-		20BD521627B17CC000638296 /* 03-双向链表.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "03-双向链表.xcodeproj"; path = "03-双向链表/03-双向链表.xcodeproj"; sourceTree = "<group>"; };
+		20BD520C27B17CC000638296 /* 03-双向链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "03-双向链表"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20BD521D27B17D0000638296 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		20BD521E27B17D0000638296 /* DoubleLinkedList.swift 00-01-15-086.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DoubleLinkedList.swift 00-01-15-086.swift"; sourceTree = "<group>"; };
+		20BD521F27B17D0000638296 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		20BD522027B17D0000638296 /* ArrayList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayList.swift; sourceTree = "<group>"; };
+		20BD522627B17D2300638296 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		20BD51D527B17BFF00638296 /* Frameworks */ = {
+		20BD520927B17CC000638296 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -52,65 +46,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		20BD51CF27B17BFF00638296 = {
+		20BD520327B17CC000638296 = {
 			isa = PBXGroup;
 			children = (
-				20BD521627B17CC000638296 /* 03-双向链表.xcodeproj */,
-				20BD51F527B17C3C00638296 /* 03-单向链表.xcodeproj */,
+				20BD520E27B17CC000638296 /* 03-双向链表 */,
+				20BD520D27B17CC000638296 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		20BD51F627B17C3C00638296 /* Products */ = {
+		20BD520D27B17CC000638296 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				20BD51FA27B17C3C00638296 /* 03-单向链表 */,
+				20BD520C27B17CC000638296 /* 03-双向链表 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		20BD521727B17CC000638296 /* Products */ = {
+		20BD520E27B17CC000638296 /* 03-双向链表 */ = {
 			isa = PBXGroup;
 			children = (
-				20BD521B27B17CC100638296 /* 03-双向链表 */,
+				20BD522627B17D2300638296 /* main.swift */,
+				20BD522027B17D0000638296 /* ArrayList.swift */,
+				20BD521E27B17D0000638296 /* DoubleLinkedList.swift 00-01-15-086.swift */,
+				20BD521F27B17D0000638296 /* List.swift */,
+				20BD521D27B17D0000638296 /* Person.swift */,
 			);
-			name = Products;
+			path = "03-双向链表";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		20BD51D727B17BFF00638296 /* 03-链表 */ = {
+		20BD520B27B17CC000638296 /* 03-双向链表 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 20BD51DF27B17BFF00638296 /* Build configuration list for PBXNativeTarget "03-链表" */;
+			buildConfigurationList = 20BD521327B17CC000638296 /* Build configuration list for PBXNativeTarget "03-双向链表" */;
 			buildPhases = (
-				20BD51D427B17BFF00638296 /* Sources */,
-				20BD51D527B17BFF00638296 /* Frameworks */,
-				20BD51D627B17BFF00638296 /* CopyFiles */,
+				20BD520827B17CC000638296 /* Sources */,
+				20BD520927B17CC000638296 /* Frameworks */,
+				20BD520A27B17CC000638296 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "03-链表";
-			productName = "03-链表";
-			productReference = 20BD51D827B17BFF00638296 /* 03-链表 */;
+			name = "03-双向链表";
+			productName = "03-双向链表";
+			productReference = 20BD520C27B17CC000638296 /* 03-双向链表 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		20BD51D027B17BFF00638296 /* Project object */ = {
+		20BD520427B17CC000638296 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					20BD51D727B17BFF00638296 = {
+					20BD520B27B17CC000638296 = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
 			};
-			buildConfigurationList = 20BD51D327B17BFF00638296 /* Build configuration list for PBXProject "03-链表" */;
+			buildConfigurationList = 20BD520727B17CC000638296 /* Build configuration list for PBXProject "03-双向链表" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,55 +116,33 @@
 				en,
 				Base,
 			);
-			mainGroup = 20BD51CF27B17BFF00638296;
-			productRefGroup = 20BD51CF27B17BFF00638296;
+			mainGroup = 20BD520327B17CC000638296;
+			productRefGroup = 20BD520D27B17CC000638296 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 20BD51F627B17C3C00638296 /* Products */;
-					ProjectRef = 20BD51F527B17C3C00638296 /* 03-单向链表.xcodeproj */;
-				},
-				{
-					ProductGroup = 20BD521727B17CC000638296 /* Products */;
-					ProjectRef = 20BD521627B17CC000638296 /* 03-双向链表.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
-				20BD51D727B17BFF00638296 /* 03-链表 */,
+				20BD520B27B17CC000638296 /* 03-双向链表 */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		20BD51FA27B17C3C00638296 /* 03-单向链表 */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = "03-单向链表";
-			remoteRef = 20BD51F927B17C3C00638296 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		20BD521B27B17CC100638296 /* 03-双向链表 */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = "03-双向链表";
-			remoteRef = 20BD521A27B17CC100638296 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXSourcesBuildPhase section */
-		20BD51D427B17BFF00638296 /* Sources */ = {
+		20BD520827B17CC000638296 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20BD522227B17D0000638296 /* Person.swift in Sources */,
+				20BD522727B17D2300638296 /* main.swift in Sources */,
+				20BD522527B17D0000638296 /* ArrayList.swift in Sources */,
+				20BD522327B17D0000638296 /* DoubleLinkedList.swift 00-01-15-086.swift in Sources */,
+				20BD522427B17D0000638296 /* List.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		20BD51DD27B17BFF00638296 /* Debug */ = {
+		20BD521127B17CC000638296 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +203,7 @@
 			};
 			name = Debug;
 		};
-		20BD51DE27B17BFF00638296 /* Release */ = {
+		20BD521227B17CC000638296 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -281,7 +257,7 @@
 			};
 			name = Release;
 		};
-		20BD51E027B17BFF00638296 /* Debug */ = {
+		20BD521427B17CC000638296 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -290,7 +266,7 @@
 			};
 			name = Debug;
 		};
-		20BD51E127B17BFF00638296 /* Release */ = {
+		20BD521527B17CC000638296 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -302,25 +278,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		20BD51D327B17BFF00638296 /* Build configuration list for PBXProject "03-链表" */ = {
+		20BD520727B17CC000638296 /* Build configuration list for PBXProject "03-双向链表" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				20BD51DD27B17BFF00638296 /* Debug */,
-				20BD51DE27B17BFF00638296 /* Release */,
+				20BD521127B17CC000638296 /* Debug */,
+				20BD521227B17CC000638296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		20BD51DF27B17BFF00638296 /* Build configuration list for PBXNativeTarget "03-链表" */ = {
+		20BD521327B17CC000638296 /* Build configuration list for PBXNativeTarget "03-双向链表" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				20BD51E027B17BFF00638296 /* Debug */,
-				20BD51E127B17BFF00638296 /* Release */,
+				20BD521427B17CC000638296 /* Debug */,
+				20BD521527B17CC000638296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 20BD51D027B17BFF00638296 /* Project object */;
+	rootObject = 20BD520427B17CC000638296 /* Project object */;
 }

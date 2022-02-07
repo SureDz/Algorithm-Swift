@@ -8,7 +8,7 @@
 import Foundation
 
 
-testArray()
+testLinked()
 
 func testLinked() {
     var list = SureLinked<Int>()
