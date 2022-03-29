@@ -21,7 +21,7 @@ func testLinked() {
     list.add(55, at: 0)
     list.add(66, at: 2)
     list.add(77, at: list.size)
-    print(list)
+    print(list.size)
     
     print(list.remove(index: 0) as Any)
     print(list.remove(index: 2) as Any)

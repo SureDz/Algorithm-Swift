@@ -65,11 +65,11 @@
 		20BD51ED27B17C3C00638296 /* 03-单向链表 */ = {
 			isa = PBXGroup;
 			children = (
+				20BD51EE27B17C3C00638296 /* main.swift */,
 				20BD51FC27B17C7B00638296 /* ArrayList.swift */,
 				20BD51FD27B17C7B00638296 /* List.swift */,
 				20BD51FB27B17C7B00638296 /* Person.swift */,
 				20BD51FE27B17C7B00638296 /* SingleLinkedList.swift */,
-				20BD51EE27B17C3C00638296 /* main.swift */,
 			);
 			path = "03-单向链表";
 			sourceTree = "<group>";

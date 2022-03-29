@@ -11,7 +11,15 @@ var list = SureArray<Any>()
 list.add(10);
 list.add(nil);
 list.add(Person(age: 10, name: "Jack"));
-list.add(22);
+list.add(1);
+list.add(2);
+list.add(3);
+list.add(4);
+list.add(5);
+list.add(6);
+list.add(7);
+list.add(8);
+
 print(list)
 list.remove(index: 3)
 print(list)

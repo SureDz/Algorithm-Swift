@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		20BD522227B17D0000638296 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BD521D27B17D0000638296 /* Person.swift */; };
-		20BD522327B17D0000638296 /* DoubleLinkedList.swift 00-01-15-086.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BD521E27B17D0000638296 /* DoubleLinkedList.swift 00-01-15-086.swift */; };
+		20BD522327B17D0000638296 /* DoubleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BD521E27B17D0000638296 /* DoubleLinkedList.swift */; };
 		20BD522427B17D0000638296 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BD521F27B17D0000638296 /* List.swift */; };
 		20BD522527B17D0000638296 /* ArrayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BD522027B17D0000638296 /* ArrayList.swift */; };
 		20BD522727B17D2300638296 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BD522627B17D2300638296 /* main.swift */; };
@@ -29,7 +29,7 @@
 /* Begin PBXFileReference section */
 		20BD520C27B17CC000638296 /* 03-双向链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "03-双向链表"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BD521D27B17D0000638296 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		20BD521E27B17D0000638296 /* DoubleLinkedList.swift 00-01-15-086.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DoubleLinkedList.swift 00-01-15-086.swift"; sourceTree = "<group>"; };
+		20BD521E27B17D0000638296 /* DoubleLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleLinkedList.swift; sourceTree = "<group>"; };
 		20BD521F27B17D0000638296 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		20BD522027B17D0000638296 /* ArrayList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayList.swift; sourceTree = "<group>"; };
 		20BD522627B17D2300638296 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 			children = (
 				20BD522627B17D2300638296 /* main.swift */,
 				20BD522027B17D0000638296 /* ArrayList.swift */,
-				20BD521E27B17D0000638296 /* DoubleLinkedList.swift 00-01-15-086.swift */,
+				20BD521E27B17D0000638296 /* DoubleLinkedList.swift */,
 				20BD521F27B17D0000638296 /* List.swift */,
 				20BD521D27B17D0000638296 /* Person.swift */,
 			);
@@ -134,7 +134,7 @@
 				20BD522227B17D0000638296 /* Person.swift in Sources */,
 				20BD522727B17D2300638296 /* main.swift in Sources */,
 				20BD522527B17D0000638296 /* ArrayList.swift in Sources */,
-				20BD522327B17D0000638296 /* DoubleLinkedList.swift 00-01-15-086.swift in Sources */,
+				20BD522327B17D0000638296 /* DoubleLinkedList.swift in Sources */,
 				20BD522427B17D0000638296 /* List.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

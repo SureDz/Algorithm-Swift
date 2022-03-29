@@ -147,7 +147,7 @@ extension SureArray {
      */
     private mutating func ensureCapacity(_ capacity: Int) {
         let oldCapacity = elements.count
-        guard oldCapacity > capacity else {
+        guard oldCapacity >= capacity else {
             let newCapacity = oldCapacity + oldCapacity >> 1
             var newElements = [Element?](repeating: DEFAULT_VALUE, count: newCapacity)
             for i in 0..<size {
@@ -162,7 +162,7 @@ extension SureArray {
     private mutating func trim() {
         let oldCapacity = elements.count
         let newCapacity = oldCapacity >> 1
-        guard size >= newCapacity && oldCapacity <= DEFAULT_CAPACITY else {
+        guard size >= newCapacity || oldCapacity <= DEFAULT_CAPACITY else {
             var newElements = [Element?](repeating: DEFAULT_VALUE, count: newCapacity)
             for i in 0..<size {
                 newElements[i] = elements[i]

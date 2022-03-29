@@ -175,7 +175,7 @@ extension SureArray {
      */
     private mutating func ensureCapacity(_ capacity: Int) {
         let oldCapacity = elements.count
-        guard oldCapacity > capacity else {
+        guard oldCapacity >= capacity else {
             let newCapacity = oldCapacity + oldCapacity >> 1
             var newElements = [T?](repeating: DEFAULT_VALUE, count: newCapacity)
             for i in 0..<size {

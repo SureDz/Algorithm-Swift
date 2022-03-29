@@ -10,7 +10,7 @@ import Foundation
  * https://leetcode-cn.com/problems/linked-list-cycle/
  */
 class _141_环形链表 {
-    // 快慢指针
+//     快慢指针
     func hasCycle(_ head: ListNode?) -> Bool {
         
         if head == nil || head?.next == nil {

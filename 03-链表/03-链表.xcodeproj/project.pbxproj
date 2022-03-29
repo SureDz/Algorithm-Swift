@@ -21,6 +21,20 @@
 			remoteGlobalIDString = 20BD520C27B17CC000638296;
 			remoteInfo = "03-双向链表";
 		};
+		20BD524227B17E6600638296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20BD523E27B17E6500638296 /* 03-单向循环链表.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 20BD523427B17E6500638296;
+			remoteInfo = "03-单向循环链表";
+		};
+		20BD526327B1FE4A00638296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20BD525F27B1FE4900638296 /* 03-双向循环链表.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 20BD525527B1FE4900638296;
+			remoteInfo = "03-双向循环链表";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,9 +50,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		20BD51D827B17BFF00638296 /* 03-链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "03-链表"; path = "/Users/Dz/Desktop/GitHub/Algorithm-Swift/03-链表/build/Debug/03-链表"; sourceTree = "<absolute>"; };
+		2038680727BC9CC40040FC64 /* 03-链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "03-链表"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BD51F527B17C3C00638296 /* 03-单向链表.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "03-单向链表.xcodeproj"; path = "03-单向链表/03-单向链表.xcodeproj"; sourceTree = "<group>"; };
 		20BD521627B17CC000638296 /* 03-双向链表.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "03-双向链表.xcodeproj"; path = "03-双向链表/03-双向链表.xcodeproj"; sourceTree = "<group>"; };
+		20BD523E27B17E6500638296 /* 03-单向循环链表.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "03-单向循环链表.xcodeproj"; path = "03-单向循环链表/03-单向循环链表.xcodeproj"; sourceTree = "<group>"; };
+		20BD525F27B1FE4900638296 /* 03-双向循环链表.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "03-双向循环链表.xcodeproj"; path = "03-双向循环链表/03-双向循环链表.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +71,11 @@
 		20BD51CF27B17BFF00638296 = {
 			isa = PBXGroup;
 			children = (
+				20BD525F27B1FE4900638296 /* 03-双向循环链表.xcodeproj */,
+				20BD523E27B17E6500638296 /* 03-单向循环链表.xcodeproj */,
 				20BD521627B17CC000638296 /* 03-双向链表.xcodeproj */,
 				20BD51F527B17C3C00638296 /* 03-单向链表.xcodeproj */,
+				2038680727BC9CC40040FC64 /* 03-链表 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +91,22 @@
 			isa = PBXGroup;
 			children = (
 				20BD521B27B17CC100638296 /* 03-双向链表 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20BD523F27B17E6500638296 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20BD524327B17E6600638296 /* 03-单向循环链表 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20BD526027B1FE4900638296 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20BD526427B1FE4A00638296 /* 03-双向循环链表 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,7 +128,7 @@
 			);
 			name = "03-链表";
 			productName = "03-链表";
-			productReference = 20BD51D827B17BFF00638296 /* 03-链表 */;
+			productReference = 2038680727BC9CC40040FC64 /* 03-链表 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -123,8 +158,16 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 20BD523F27B17E6500638296 /* Products */;
+					ProjectRef = 20BD523E27B17E6500638296 /* 03-单向循环链表.xcodeproj */;
+				},
+				{
 					ProductGroup = 20BD51F627B17C3C00638296 /* Products */;
 					ProjectRef = 20BD51F527B17C3C00638296 /* 03-单向链表.xcodeproj */;
+				},
+				{
+					ProductGroup = 20BD526027B1FE4900638296 /* Products */;
+					ProjectRef = 20BD525F27B1FE4900638296 /* 03-双向循环链表.xcodeproj */;
 				},
 				{
 					ProductGroup = 20BD521727B17CC000638296 /* Products */;
@@ -151,6 +194,20 @@
 			fileType = "compiled.mach-o.executable";
 			path = "03-双向链表";
 			remoteRef = 20BD521A27B17CC100638296 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		20BD524327B17E6600638296 /* 03-单向循环链表 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "03-单向循环链表";
+			remoteRef = 20BD524227B17E6600638296 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		20BD526427B1FE4A00638296 /* 03-双向循环链表 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "03-双向循环链表";
+			remoteRef = 20BD526327B1FE4A00638296 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
