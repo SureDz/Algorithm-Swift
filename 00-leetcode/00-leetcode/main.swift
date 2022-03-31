@@ -7,28 +7,42 @@
 
 import Foundation
 
+test_平衡二叉树()
+func test_平衡二叉树() {
+    let solotion = _110_平衡二叉树()
 
-test_对称二叉树()
-func test_对称二叉树() {
-    let solotion = _101_对称二叉树()
-
-    let n3 = TreeNode(3, nil, nil)
-    let n4 = TreeNode(4, nil, nil)
-    let l2 = TreeNode(2, n4, n3)
-    let r2 = TreeNode(2, n3, n4)
+    let n3 = TreeNode(15, nil, nil)
+    let n4 = TreeNode(7, nil, nil)
+    let l2 = TreeNode(20, n3, n4)
+    let r2 = TreeNode(9, nil, nil)
 
     
-//    let n6 = TreeNode(6, nil, nil)
-//
-//    let l5 = TreeNode(5, n6, nil)
-//    let l4 = TreeNode(4, l5, nil)
-//
-//    let r5 = TreeNode(5, nil, n6)
-//    let r4 = TreeNode(4, nil, r5)
 
     let root = TreeNode(3, l2, r2)
-    print(solotion.isSymmetric(root))
+    print(solotion.isBalanced(root))
 }
+
+//test_对称二叉树()
+//func test_对称二叉树() {
+//    let solotion = _101_对称二叉树()
+//
+//    let n3 = TreeNode(3, nil, nil)
+//    let n4 = TreeNode(4, nil, nil)
+//    let l2 = TreeNode(2, n4, n3)
+//    let r2 = TreeNode(2, n3, n4)
+//
+//
+////    let n6 = TreeNode(6, nil, nil)
+////
+////    let l5 = TreeNode(5, n6, nil)
+////    let l4 = TreeNode(4, l5, nil)
+////
+////    let r5 = TreeNode(5, nil, n6)
+////    let r4 = TreeNode(4, nil, r5)
+//
+//    let root = TreeNode(3, l2, r2)
+//    print(solotion.isSymmetric(root))
+//}
 
 //test_根据前序和后序遍历构造二叉树()
 //func test_根据前序和后序遍历构造二叉树() {

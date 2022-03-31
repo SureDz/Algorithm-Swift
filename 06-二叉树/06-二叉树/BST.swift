@@ -78,6 +78,8 @@ class BST<T>: BinaryTree<T> where T: Comparable {
             return
         }
         
+        size -= 1
+        
         var curNode: TreeNode<T>? = node
         
         if curNode!.hasTwoChildren() { // 度为2的节点
@@ -100,15 +102,13 @@ class BST<T>: BinaryTree<T> where T: Comparable {
             } else if curNode == curNode?.parent?.right { // 删除的节点是右子节点
                 curNode?.parent?.right = replacement
             }
-        } else { // 度为0的节点
-            if curNode?.parent == nil { // 删除的节点是根节点
-                root = nil
-            } else { // 删除的不是根节点
-                if curNode == curNode?.parent?.left { // 删除的节点是左子节点
-                    curNode?.parent?.left = nil
-                } else if curNode == curNode?.parent?.right { // 删除的节点是右子节点
-                    curNode?.parent?.right = nil
-                }
+        } else if curNode?.parent == nil { // 删除的节点是度为0的节点且是根节点
+            root = nil
+        } else { // 删除的不是根节点
+            if curNode == curNode?.parent?.left { // 删除的节点是左子节点
+                curNode?.parent?.left = nil
+            } else if curNode == curNode?.parent?.right { // 删除的节点是右子节点
+                curNode?.parent?.right = nil
             }
         }
     }

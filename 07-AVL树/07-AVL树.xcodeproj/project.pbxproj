@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20D5F2CD27F3EEFA00859F5C /* AVLTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5F2CC27F3EEFA00859F5C /* AVLTree.swift */; };
+		20D5F2CF27F3F74900859F5C /* AVLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5F2CE27F3F74900859F5C /* AVLNode.swift */; };
 		20EAB0FE27F2DC6A00F80CCE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAB0FD27F2DC6A00F80CCE /* main.swift */; };
 		20EAB10527F2DC7500F80CCE /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAB10427F2DC7500F80CCE /* BinaryTree.swift */; };
 		20EAB10727F2E01500F80CCE /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAB10627F2E01500F80CCE /* TreeNode.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		20D5F2CC27F3EEFA00859F5C /* AVLTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLTree.swift; sourceTree = "<group>"; };
+		20D5F2CE27F3F74900859F5C /* AVLNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLNode.swift; sourceTree = "<group>"; };
 		20EAB0FA27F2DC6A00F80CCE /* 07-AVL树 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "07-AVL树"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EAB0FD27F2DC6A00F80CCE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		20EAB10427F2DC7500F80CCE /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
@@ -64,9 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				20EAB0FD27F2DC6A00F80CCE /* main.swift */,
-				20EAB10427F2DC7500F80CCE /* BinaryTree.swift */,
+				20D5F2CC27F3EEFA00859F5C /* AVLTree.swift */,
 				20EAB10827F2EE6200F80CCE /* BST.swift */,
+				20EAB10427F2DC7500F80CCE /* BinaryTree.swift */,
 				20EAB10627F2E01500F80CCE /* TreeNode.swift */,
+				20D5F2CE27F3F74900859F5C /* AVLNode.swift */,
 			);
 			path = "07-AVL树";
 			sourceTree = "<group>";
@@ -132,7 +138,9 @@
 				20EAB10527F2DC7500F80CCE /* BinaryTree.swift in Sources */,
 				20EAB10927F2EE6200F80CCE /* BST.swift in Sources */,
 				20EAB0FE27F2DC6A00F80CCE /* main.swift in Sources */,
+				20D5F2CF27F3F74900859F5C /* AVLNode.swift in Sources */,
 				20EAB10727F2E01500F80CCE /* TreeNode.swift in Sources */,
+				20D5F2CD27F3EEFA00859F5C /* AVLTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

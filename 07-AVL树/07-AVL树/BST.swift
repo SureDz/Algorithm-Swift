@@ -13,26 +13,47 @@ class BST<T>: BinaryTree<T> where T: Comparable {
     
     init(comparator: @escaping Comparator) {
         self.comparator = comparator
+        super.init()
     }
     
     override init() {
         self.comparator = nil
     }
     
+    func createNode(_ element: T, _ parent: TreeNode<T>?) -> TreeNode<T> {
+        TreeNode(element: element, parent: parent)
+    }
+    
+    /**
+     * 添加node之后的调整
+     * @param node 新添加的节点
+     */
+     func afterAdd(_ node: TreeNode<T>) {}
+    
+    /**
+     * 删除node之后的调整
+     * @param node 被删除的节点
+     */
+    func afterRemove(_ node: TreeNode<T>) {}
+    
     func add(_ element: T) {
+        
         elementNullCheck(element)
         
         // 添加的是第一个节点
         if root == nil {
-            root = TreeNode(element: element, parent: nil)
+            root = createNode(element, nil)
             size += 1
+            
+            // 新添加节点之后的处理
+            afterAdd(root!)
             return
         }
         
         // 添加的不是第一个节点
         // 找到父节点
-        var parent: TreeNode<T>? = root
-        var node: TreeNode<T>? = root
+        var parent = root
+        var node = root
         var cmp = 0
         while node != nil {
             cmp = compare(lt: element, rt: node!.element)
@@ -47,26 +68,19 @@ class BST<T>: BinaryTree<T> where T: Comparable {
             }
         }
         
-        let newNode: TreeNode<T>? = TreeNode(element: element, parent: parent)
+        let newNode = createNode(element, parent)
         
+        // 看看插入到父节点的哪个位置
         if cmp > 0 {
             parent?.right = newNode
-        } else {
+        } else if cmp < 0 {
             parent?.left = newNode
         }
+        
         size += 1
-    }
-    
-    func compare(lt: T, rt: T) -> Int {
-        if comparator != nil {
-            return comparator!(lt, rt).rawValue
-        }
-        if lt == rt {
-            return 0
-        } else if lt < rt {
-            return -1
-        }
-        return 1
+        
+        // 新添加节点之后的处理
+        afterAdd(newNode)
     }
     
     func remove(_ element: T) {
@@ -78,38 +92,47 @@ class BST<T>: BinaryTree<T> where T: Comparable {
             return
         }
         
-        var curNode: TreeNode<T>? = node
+        size -= 1
         
+        var curNode = node
         if curNode!.hasTwoChildren() { // 度为2的节点
-            let sNode: TreeNode<T>? = successor(curNode) // 找到后继节点
-            
-            curNode!.element = sNode!.element // 值覆盖
-            
+            let sNode = successor(curNode)  // 找到后继节点
+            curNode?.element = sNode!.element // 值覆盖
             curNode = sNode // 删除后继节点
         }
         
         // 删除curNode(一定是度为1或者度为0的节点)
-        let replacement: TreeNode<T>? = curNode?.left != nil ? curNode?.left : curNode?.right
+        let replacement = curNode?.left != nil ? curNode?.left : curNode?.right
         
-        if replacement != nil { // 度为1的节点
+        if replacement != nil { // 删除度为1的节点
+            // 更改parent
             replacement?.parent = curNode?.parent
-            if curNode?.parent == nil { // 删除的节点是根节点
+            // 更改parent的left、right
+            if curNode?.parent == nil { // 删除根节点
                 root = replacement
-            } else if curNode == curNode?.parent?.left { // 删除的节点是左子节点
+            } else if curNode == curNode?.parent?.left {  // 删除的节点是左子节点
+                curNode?.parent?.left = replacement
+            } else if curNode == curNode?.parent?.right {  // 删除的节点是右子节点
+                curNode?.parent?.right = replacement
+            }
+            
+            // 删除节点之后的处理
+            afterRemove(curNode!);
+        } else if curNode?.parent == nil { // 删除度为0的节点且为根节点
+            root = nil
+            
+            // 删除节点之后的处理
+            afterRemove(curNode!);
+        } else {
+            // 删除的不是根节点
+            if curNode == curNode?.parent?.left {  // 删除的节点是左子节点
                 curNode?.parent?.left = replacement
             } else if curNode == curNode?.parent?.right { // 删除的节点是右子节点
                 curNode?.parent?.right = replacement
             }
-        } else { // 度为0的节点
-            if curNode?.parent == nil { // 删除的节点是根节点
-                root = nil
-            } else { // 删除的不是根节点
-                if curNode == curNode?.parent?.left { // 删除的节点是左子节点
-                    curNode?.parent?.left = nil
-                } else if curNode == curNode?.parent?.right { // 删除的节点是右子节点
-                    curNode?.parent?.right = nil
-                }
-            }
+            
+            // 删除节点之后的处理
+            afterRemove(curNode!);
         }
     }
     
@@ -129,6 +152,18 @@ class BST<T>: BinaryTree<T> where T: Comparable {
             }
         }
         return nil
+    }
+    
+    func compare(lt: T, rt: T) -> Int {
+        if comparator != nil {
+            return comparator!(lt, rt).rawValue
+        }
+        if lt == rt {
+            return 0
+        } else if lt < rt {
+            return -1
+        }
+        return 1
     }
     
     private func elementNullCheck(_ element: T?) {

@@ -263,5 +263,3 @@ extension BinaryTree {
         return p?.parent
     }
 }
-
-

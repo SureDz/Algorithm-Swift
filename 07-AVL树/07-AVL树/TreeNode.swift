@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class TreeNode<T> {
+public class TreeNode<T>: CustomStringConvertible {
     
     var element: T
     var left: TreeNode?
@@ -27,6 +27,9 @@ public class TreeNode<T> {
         left != nil && right != nil
     }
     
+    public var description: String {
+        "\(element)"
+    }
 }
 
 extension TreeNode: Equatable where T: Equatable {
@@ -35,20 +38,19 @@ extension TreeNode: Equatable where T: Equatable {
         lhs.element == rhs.element
     }
 
+    public func isLeftChild() -> Bool {
+        parent != nil && self == parent?.left
+    }
+    
+    public func isRightChild() -> Bool {
+        parent != nil && self == parent?.right
+    }
 }
 
 extension TreeNode: Comparable where T: Comparable {
   
     public static func < (lhs: TreeNode<T>, rhs: TreeNode<T>) -> Bool {
         lhs.element < rhs.element
-    }
-    
-}
-
-extension TreeNode: CustomStringConvertible {
-  
-    public var description: String {
-        "\(element)"
     }
     
 }

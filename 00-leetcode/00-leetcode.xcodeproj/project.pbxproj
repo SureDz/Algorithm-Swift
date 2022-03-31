@@ -39,6 +39,7 @@
 		20AB67BB27B57A9000A9416D /* _856_括号的分数.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AB67BA27B57A9000A9416D /* _856_括号的分数.swift */; };
 		20AB67BD27BB56DF00A9416D /* _150_逆波兰表达式求值.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AB67BC27BB56DF00A9416D /* _150_逆波兰表达式求值.swift */; };
 		20AB67BF27BB5B9700A9416D /* _224_基本计算器.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AB67BE27BB5B9700A9416D /* _224_基本计算器.swift */; };
+		20D5F2E227F56E0300859F5C /* _110_平衡二叉树.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5F2E127F56E0300859F5C /* _110_平衡二叉树.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,6 +88,7 @@
 		20AB67BA27B57A9000A9416D /* _856_括号的分数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_856_括号的分数.swift"; sourceTree = "<group>"; };
 		20AB67BC27BB56DF00A9416D /* _150_逆波兰表达式求值.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_150_逆波兰表达式求值.swift"; sourceTree = "<group>"; };
 		20AB67BE27BB5B9700A9416D /* _224_基本计算器.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_224_基本计算器.swift"; sourceTree = "<group>"; };
+		20D5F2E127F56E0300859F5C /* _110_平衡二叉树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_110_平衡二叉树.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				20A808FD2785F254006DCCA9 /* main.swift */,
+				20D5F2E027F56DDE00859F5C /* 平衡二叉树 */,
 				20A5211827EC32EE00AF3F29 /* 二叉树 */,
 				20A809062785FE18006DCCA9 /* 链表 */,
 				20AB67B727B4A37400A9416D /* 栈 */,
@@ -187,6 +190,14 @@
 			path = "栈";
 			sourceTree = "<group>";
 		};
+		20D5F2E027F56DDE00859F5C /* 平衡二叉树 */ = {
+			isa = PBXGroup;
+			children = (
+				20D5F2E127F56E0300859F5C /* _110_平衡二叉树.swift */,
+			);
+			path = "平衡二叉树";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -214,7 +225,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					20A808F92785F254006DCCA9 = {
 						CreatedOnToolsVersion = 12.5;
@@ -246,6 +257,7 @@
 			files = (
 				20A5212227EE279100AF3F29 /* _145_二叉树的后序遍历.swift in Sources */,
 				20A5212E27EEFC3A00AF3F29 /* Node.swift in Sources */,
+				20D5F2E227F56E0300859F5C /* _110_平衡二叉树.swift in Sources */,
 				20A5212827EE3D5700AF3F29 /* _107_二叉树的层序遍历 II.swift in Sources */,
 				20A5212627EE3A4C00AF3F29 /* _104_二叉树的最大深度.swift in Sources */,
 				20A5212427EE36D000AF3F29 /* _102_二叉树的层序遍历.swift in Sources */,
@@ -400,6 +412,7 @@
 		20A809022785F254006DCCA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -409,6 +422,7 @@
 		20A809032785F254006DCCA9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

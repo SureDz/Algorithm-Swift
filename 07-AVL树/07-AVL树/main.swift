@@ -10,17 +10,22 @@ import Foundation
 testbst()
 
 func testbst() {
-    let data = [7, 4, 9, 2, 5, 8, 11, 3, 12, 1]
+    let data = [67, 52, 92, 96, 53, 95, 13, 63, 34, 82, 76, 54, 9, 68, 39]
     
-    let bst: BST<Int> = BST()
-    for i in data {
-        bst.add(i)
+    let avl: AVLTree<Int> = AVLTree()
+    for i in 0 ..< data.count {
+        avl.add(data[i])
+//        print("【" + "\(data[i])" + "】");
+//        print(avl)
+//        print("--------------")
     }
-    print(bst)
-    
-    bst.remove(7)
-    print(bst)
-    print(bst.contain(8))
+   
+    for i in 0 ..< data.count {
+        avl.remove(data[i])
+        print("【" + "\(data[i])" + "】");
+        print(avl)
+        print("--------------")
+    }
 
 //    print("preorder")
 //    bst.preorder(visitor: Visitor(visit: {

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class BinaryTree<T> where T: Comparable {
+public class BinaryTree<T> where T: Comparable {
     
     var size: Int
     
@@ -35,20 +35,50 @@ class BinaryTree<T> where T: Comparable {
 // 打印
 extension BinaryTree: CustomStringConvertible {
 
-    func toString(node: TreeNode<T>?, prefix: String, result: String) -> String {
-        if node == nil {
-            return result
+    func nodeBlank(_ count: Int) -> String {
+        var blank = ""
+        var count = count
+        while count > 0 {
+            count -= 1
+            blank += " "
+        }
+        return blank
+    }
+    
+    func toString(node: TreeNode<T>?, nodePrefix: String, leftPrefix: String, rightPrefix: String) -> String {
+        guard let node = node else {
+            return ""
+        }
+
+        let left = node.left
+        let right = node.right
+        let str = node.description
+        
+        var length = str.count
+        if (length % 2 == 0) {
+            length -= 1
         }
         
-        var result = result + prefix + "\(node!.element)" + "\n"
-        result = toString(node: node?.left, prefix: prefix + "L---", result: result)
-        result = toString(node: node?.right, prefix: prefix + "R---", result: result)
+        length >>= 1
         
+        var result: String = ""
+        if right != nil {
+            let rightPrefix = rightPrefix + nodeBlank(length)
+            result += toString(node: node.right, nodePrefix: rightPrefix + "┌──", leftPrefix: rightPrefix + "│  ", rightPrefix: rightPrefix + "   ")
+        }
+       
+        result += nodePrefix + str + "\n"
+        
+        if left != nil {
+            let leftPrefix = leftPrefix + nodeBlank(length)
+            result += toString(node: node.left, nodePrefix: leftPrefix + "└──", leftPrefix: leftPrefix + "   ", rightPrefix: leftPrefix + "│  ")
+        }
+
         return result
     }
     
-    var description: String {
-        toString(node: root, prefix: "", result: "")
+    public var description: String {
+        toString(node: root, nodePrefix: "", leftPrefix: "", rightPrefix: "")
     }
 
 }
@@ -143,7 +173,6 @@ extension BinaryTree {
     }
     
     // 计算高度
-    
     func heightIteration() -> Int {
         guard let root = root else {
             return 0
@@ -263,5 +292,3 @@ extension BinaryTree {
         return p?.parent
     }
 }
-
-
