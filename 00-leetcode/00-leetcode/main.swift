@@ -7,20 +7,26 @@
 
 import Foundation
 
-test_平衡二叉树()
-func test_平衡二叉树() {
-    let solotion = _110_平衡二叉树()
-
-    let n3 = TreeNode(15, nil, nil)
-    let n4 = TreeNode(7, nil, nil)
-    let l2 = TreeNode(20, n3, n4)
-    let r2 = TreeNode(9, nil, nil)
-
-    
-
-    let root = TreeNode(3, l2, r2)
-    print(solotion.isBalanced(root))
+test_两个数组的交集()
+func test_两个数组的交集() {
+    let solotion = _349_两个数组的交集()
+    print(solotion.intersection([1, 2, 2, 3], [2, 2, 3, 4]))
 }
+
+//test_平衡二叉树()
+//func test_平衡二叉树() {
+//    let solotion = _110_平衡二叉树()
+//
+//    let n3 = TreeNode(15, nil, nil)
+//    let n4 = TreeNode(7, nil, nil)
+//    let l2 = TreeNode(20, n3, n4)
+//    let r2 = TreeNode(9, nil, nil)
+//
+//
+//
+//    let root = TreeNode(3, l2, r2)
+//    print(solotion.isBalanced(root))
+//}
 
 //test_对称二叉树()
 //func test_对称二叉树() {

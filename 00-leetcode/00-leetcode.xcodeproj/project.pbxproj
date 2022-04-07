@@ -35,6 +35,7 @@
 		20A8091027868EF3006DCCA9 /* _203_移除链表元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A8090F27868EF3006DCCA9 /* _203_移除链表元素.swift */; };
 		20A80912278695A8006DCCA9 /* _83_删除排序链表中的重复元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A80911278695A8006DCCA9 /* _83_删除排序链表中的重复元素.swift */; };
 		20A8091427869809006DCCA9 /* _876_链表的中间结点.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A8091327869809006DCCA9 /* _876_链表的中间结点.swift */; };
+		20AAD90727FE6DD500ABAA4E /* _349_两个数组的交集.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AAD90627FE6DD500ABAA4E /* _349_两个数组的交集.swift */; };
 		20AB67B927B4A39100A9416D /* _20_有效的括号.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AB67B827B4A39100A9416D /* _20_有效的括号.swift */; };
 		20AB67BB27B57A9000A9416D /* _856_括号的分数.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AB67BA27B57A9000A9416D /* _856_括号的分数.swift */; };
 		20AB67BD27BB56DF00A9416D /* _150_逆波兰表达式求值.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AB67BC27BB56DF00A9416D /* _150_逆波兰表达式求值.swift */; };
@@ -84,6 +85,7 @@
 		20A8090F27868EF3006DCCA9 /* _203_移除链表元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_203_移除链表元素.swift"; sourceTree = "<group>"; };
 		20A80911278695A8006DCCA9 /* _83_删除排序链表中的重复元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_83_删除排序链表中的重复元素.swift"; sourceTree = "<group>"; };
 		20A8091327869809006DCCA9 /* _876_链表的中间结点.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_876_链表的中间结点.swift"; sourceTree = "<group>"; };
+		20AAD90627FE6DD500ABAA4E /* _349_两个数组的交集.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_349_两个数组的交集.swift"; sourceTree = "<group>"; };
 		20AB67B827B4A39100A9416D /* _20_有效的括号.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_20_有效的括号.swift"; sourceTree = "<group>"; };
 		20AB67BA27B57A9000A9416D /* _856_括号的分数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_856_括号的分数.swift"; sourceTree = "<group>"; };
 		20AB67BC27BB56DF00A9416D /* _150_逆波兰表达式求值.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_150_逆波兰表达式求值.swift"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				20A808FD2785F254006DCCA9 /* main.swift */,
+				20AAD90527FE6DB600ABAA4E /* 集合 */,
 				20D5F2E027F56DDE00859F5C /* 平衡二叉树 */,
 				20A5211827EC32EE00AF3F29 /* 二叉树 */,
 				20A809062785FE18006DCCA9 /* 链表 */,
@@ -177,6 +180,14 @@
 				20A8090B2785FE6A006DCCA9 /* ListNode.swift */,
 			);
 			path = "链表";
+			sourceTree = "<group>";
+		};
+		20AAD90527FE6DB600ABAA4E /* 集合 */ = {
+			isa = PBXGroup;
+			children = (
+				20AAD90627FE6DD500ABAA4E /* _349_两个数组的交集.swift */,
+			);
+			path = "集合";
 			sourceTree = "<group>";
 		};
 		20AB67B727B4A37400A9416D /* 栈 */ = {
@@ -258,6 +269,7 @@
 				20A5212227EE279100AF3F29 /* _145_二叉树的后序遍历.swift in Sources */,
 				20A5212E27EEFC3A00AF3F29 /* Node.swift in Sources */,
 				20D5F2E227F56E0300859F5C /* _110_平衡二叉树.swift in Sources */,
+				20AAD90727FE6DD500ABAA4E /* _349_两个数组的交集.swift in Sources */,
 				20A5212827EE3D5700AF3F29 /* _107_二叉树的层序遍历 II.swift in Sources */,
 				20A5212627EE3A4C00AF3F29 /* _104_二叉树的最大深度.swift in Sources */,
 				20A5212427EE36D000AF3F29 /* _102_二叉树的层序遍历.swift in Sources */,
