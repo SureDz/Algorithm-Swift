@@ -85,6 +85,7 @@ class TreeMap<K: Comparable, V: Equatable>: Map {
         return node.value
     }
     
+    @discardableResult
     func remove(_ key: K) -> V? {
         return remove(node(key))
     }
